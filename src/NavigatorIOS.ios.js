@@ -17,7 +17,8 @@ import {
   TVEventHandler,
   View,
   Image,
-  findNodeHandle
+  findNodeHandle,
+  requireNativeComponent
 } from 'react-native';
 
 var EventEmitter = require('./EventEmitter');
@@ -28,7 +29,6 @@ var StaticContainer = require('./StaticContainer.react');
 
 var invariant = require('fbjs/lib/invariant');
 var logError = require('./logError');
-var requireNativeComponent = require('requireNativeComponent');
 
 const keyMirror = require('fbjs/lib/keyMirror');
 
