@@ -16,7 +16,6 @@ import {
   StyleSheet,
   TVEventHandler,
   View,
-  NativeModules,
   Image
 } from 'react-native';
 
