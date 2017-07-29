@@ -22,7 +22,7 @@ import {
 var EventEmitter = require('./EventEmitter');
 var NavigationContext = require('./NavigationContext');
 var RCTNavigatorManager = NativeModules.NavigatorManager;
-var React = require('React');
+var React = require('react');
 var ReactNative = require('ReactNative');
 var StaticContainer = require('StaticContainer.react');
 
