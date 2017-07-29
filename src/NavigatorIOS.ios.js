@@ -12,11 +12,11 @@
 'use strict';
 
 var EventEmitter = require('./EventEmitter');
-var Image = require('Image');
 var NavigationContext = require('./NavigationContext');
 var RCTNavigatorManager = require('NativeModules').NavigatorManager;
 var React = require('React');
 var ReactNative = require('ReactNative');
+var Image = ReactNative.Image;
 var StaticContainer = require('StaticContainer.react');
 var StyleSheet = require('StyleSheet');
 var TVEventHandler = require('TVEventHandler');
