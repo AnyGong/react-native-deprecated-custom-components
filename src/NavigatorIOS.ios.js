@@ -12,8 +12,6 @@
 'use strict';
 
 import {
-  Dimensions,
-  PanResponder,
   NativeModules,
   StyleSheet,
   TVEventHandler,
