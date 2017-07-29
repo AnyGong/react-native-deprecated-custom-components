@@ -11,7 +11,7 @@
  */
 'use strict';
 
-var EventEmitter = require('EventEmitter');
+var EventEmitter = require('./EventEmitter');
 var Image = require('Image');
 var NavigationContext = require('./NavigationContext');
 var RCTNavigatorManager = require('NativeModules').NavigatorManager;
