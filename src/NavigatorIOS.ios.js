@@ -27,7 +27,7 @@ var React = require('react');
 var StaticContainer = require('./StaticContainer.react');
 
 var invariant = require('fbjs/lib/invariant');
-var logError = require('logError');
+var logError = require('./logError');
 var requireNativeComponent = require('requireNativeComponent');
 
 const keyMirror = require('fbjs/lib/keyMirror');
