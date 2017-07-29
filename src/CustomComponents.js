@@ -26,7 +26,9 @@
 
 
 const Navigator = require('./Navigator');
+const NavigatorIOS = require('./NavigatorIOS');
 
 module.exports = {
   Navigator,
+  NavigatorIOS
 };
