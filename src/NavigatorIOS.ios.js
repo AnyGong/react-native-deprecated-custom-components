@@ -16,7 +16,7 @@ var NavigationContext = require('./NavigationContext');
 var RCTNavigatorManager = require('NativeModules').NavigatorManager;
 var React = require('React');
 var ReactNative = require('ReactNative');
-var Image = ReactNative.Image;
+// var Image = ReactNative.Image;
 var StaticContainer = require('StaticContainer.react');
 var StyleSheet = require('StyleSheet');
 var TVEventHandler = require('TVEventHandler');
@@ -329,7 +329,7 @@ var NavigatorIOS = React.createClass({
       /**
        * If set, a title image will appear instead of the text title.
        */
-      titleImage: Image.propTypes.source,
+      titleImage: ReactNative.Image.propTypes.source,
 
       /**
        * Use this to specify additional props to pass to the rendered
@@ -343,7 +343,7 @@ var NavigatorIOS = React.createClass({
        * source. Note that this doesn't apply to the header of the current
        * view, but to those views that are subsequently pushed.
        */
-      backButtonIcon: Image.propTypes.source,
+      backButtonIcon: ReactNative.Image.propTypes.source,
 
       /**
        * If set, the left navigation button text will be set to this. Note that
@@ -356,7 +356,7 @@ var NavigatorIOS = React.createClass({
        * If set, the left navigation button image will be displayed using
        * this source.
        */
-      leftButtonIcon: Image.propTypes.source,
+      leftButtonIcon: ReactNative.Image.propTypes.source,
 
       /**
        * If set, the left navigation button will display this text.
@@ -383,7 +383,7 @@ var NavigatorIOS = React.createClass({
        * If set, the right navigation button image will be displayed using
        * this source.
        */
-      rightButtonIcon: Image.propTypes.source,
+      rightButtonIcon: ReactNative.Image.propTypes.source,
 
       /**
        * If set, the right navigation button will display this text.
