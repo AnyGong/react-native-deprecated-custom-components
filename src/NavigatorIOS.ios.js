@@ -24,7 +24,7 @@ var EventEmitter = require('./EventEmitter');
 var NavigationContext = require('./NavigationContext');
 var RCTNavigatorManager = NativeModules.NavigatorManager;
 var React = require('react');
-var StaticContainer = require('StaticContainer.react');
+var StaticContainer = require('./StaticContainer.react');
 
 var invariant = require('fbjs/lib/invariant');
 var logError = require('logError');
