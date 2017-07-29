@@ -16,14 +16,14 @@ import {
   StyleSheet,
   TVEventHandler,
   View,
-  Image
+  Image,
+  findNodeHandle
 } from 'react-native';
 
 var EventEmitter = require('./EventEmitter');
 var NavigationContext = require('./NavigationContext');
 var RCTNavigatorManager = NativeModules.NavigatorManager;
 var React = require('react');
-var ReactNative = require('ReactNative');
 var StaticContainer = require('StaticContainer.react');
 
 var invariant = require('fbjs/lib/invariant');
@@ -44,7 +44,7 @@ function getuid() {
 class NavigatorTransitionerIOS extends React.Component {
   requestSchedulingNavigation(cb) {
     RCTNavigatorManager.requestSchedulingJavaScriptNavigation(
-        ReactNative.findNodeHandle(this),
+        findNodeHandle(this),
         logError,
         cb
     );
